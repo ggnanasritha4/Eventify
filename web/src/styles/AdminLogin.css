@@ -1,0 +1,123 @@
+/* ===========================
+   Admin Login Page
+=========================== */
+
+.admin-login-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff7ed, #eff6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* ===========================
+   Login Card
+=========================== */
+
+.admin-login-card {
+    width: 100%;
+    max-width: 430px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 22px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    border-top: 6px solid #F97316;
+    transition: 0.3s ease;
+}
+
+.admin-login-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.admin-login-card h2 {
+    text-align: center;
+    font-size: 34px;
+    color: #163A70;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.admin-subtitle {
+    text-align: center;
+    color: #64748B;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* ===========================
+   Labels
+=========================== */
+
+.admin-login-card label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #163A70;
+}
+
+/* ===========================
+   Inputs
+=========================== */
+
+.admin-login-card input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+}
+
+.admin-login-card input:focus {
+    outline: none;
+    border-color: #F97316;
+    box-shadow: 0 0 10px rgba(249, 115, 22, 0.25);
+}
+
+/* ===========================
+   Button
+=========================== */
+
+.admin-login-card button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #163A70;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.admin-login-card button:hover {
+    background: #F97316;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(249, 115, 22, 0.30);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+
+    .admin-login-card {
+        padding: 30px 25px;
+    }
+
+    .admin-login-card h2 {
+        font-size: 28px;
+    }
+
+}

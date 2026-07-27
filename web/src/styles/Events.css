@@ -1,0 +1,188 @@
+/* ===========================
+   Events Page
+=========================== */
+
+.events-container {
+    min-height: 100vh;
+    padding: 70px 30px;
+    background: linear-gradient(135deg, #fff7ed, #eff6ff);
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.events-title {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+    color: #163A70;
+    margin-bottom: 10px;
+}
+
+.events-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #64748B;
+    margin-bottom: 60px;
+}
+
+/* ===========================
+   Events Grid
+=========================== */
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+/* ===========================
+   Event Card
+=========================== */
+
+.event-card {
+    background: #ffffff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,.08);
+    display: flex;
+    flex-direction: column;
+    transition: .35s;
+    min-height: 500px;
+    position: relative;
+}
+
+/* Orange Top Strip */
+
+.event-card::before {
+    content: "";
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg,#F97316,#FB923C);
+}
+
+/* Hover */
+
+.event-card:hover {
+    transform: translateY(-8px) rotate(-1deg);
+    box-shadow: 0 22px 40px rgba(0,0,0,.15);
+}
+
+/* Card Content */
+
+.event-card h2 {
+    color: #163A70;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 700;
+    padding: 25px 20px 10px;
+    min-height: 80px;
+}
+
+.description {
+    text-align: center;
+    color: #64748B;
+    line-height: 1.7;
+    font-size: 16px;
+    padding: 0 20px;
+    min-height: 90px;
+}
+
+/* Event Details */
+
+.event-card p {
+    margin: 8px 20px;
+    color: #475569;
+    font-size: 16px;
+}
+
+/* Details Box */
+
+.event-card p:nth-last-child(4),
+.event-card p:nth-last-child(3),
+.event-card p:nth-last-child(2) {
+    background: #FFF7ED;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Button */
+
+.register-btn {
+    margin: auto 20px 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #F97316;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    width: calc(100% - 40px);
+}
+
+.register-btn:hover {
+    background: #163A70;
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   No Events
+=========================== */
+
+.no-events {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 45px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,.08);
+}
+
+.no-events h3 {
+    color: #163A70;
+    font-size: 30px;
+}
+
+.no-events p {
+    color: #64748B;
+    margin-top: 10px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.events-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.events-title{
+    font-size:36px;
+}
+
+.events-grid{
+    grid-template-columns:1fr;
+}
+
+.event-card{
+    min-height:auto;
+}
+
+.event-card h2,
+.description{
+    min-height:auto;
+}
+
+}

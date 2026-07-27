@@ -1,0 +1,134 @@
+/* ===========================
+   Admin Registrations Page
+=========================== */
+
+.registrations-container {
+    min-height: 100vh;
+    padding: 60px 30px;
+    background: linear-gradient(135deg, #fff7ed, #eff6ff);
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.registrations-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #163A70;
+    margin-bottom: 15px;
+}
+
+.registrations-subtitle {
+    text-align: center;
+    color: #64748B;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* ===========================
+   Back Button
+=========================== */
+
+.back-btn {
+    display: block;
+    margin: 0 auto 35px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 12px;
+    background: #163A70;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.back-btn:hover {
+    background: #F97316;
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   No Data
+=========================== */
+
+.no-data {
+    text-align: center;
+    font-size: 20px;
+    color: #64748B;
+    margin-top: 50px;
+}
+
+/* ===========================
+   Table
+=========================== */
+
+.registrations-table {
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
+
+.registrations-table th {
+    background: #163A70;
+    color: white;
+    padding: 18px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.registrations-table td {
+    padding: 16px;
+    color: #475569;
+    font-size: 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.registrations-table tr:nth-child(even) {
+    background: #fffaf5;
+}
+
+.registrations-table tr:hover {
+    background: #fff1e6;
+    transition: .3s;
+}
+
+.registrations-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 992px) {
+
+    .registrations-container {
+        overflow-x: auto;
+    }
+
+    .registrations-table {
+        min-width: 900px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .registrations-title {
+        font-size: 32px;
+    }
+
+    .registrations-subtitle {
+        font-size: 16px;
+    }
+
+}

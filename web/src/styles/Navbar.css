@@ -1,0 +1,120 @@
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 60px;
+
+    background:#163A70;
+    border-bottom:4px solid #F97316;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+/* ===========================
+   Logo
+=========================== */
+
+.logo h2{
+    color:white;
+    font-size:30px;
+    font-weight:800;
+    letter-spacing:1px;
+    margin:0;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.logo h2:hover{
+    color:#FDBA74;
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.nav-links a{
+
+    color:white;
+    text-decoration:none;
+
+    font-size:17px;
+    font-weight:600;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    transition:.35s ease;
+}
+
+/* Hover */
+
+.nav-links a:hover{
+
+    background:#F97316;
+    color:white;
+
+    transform:translateY(-2px);
+}
+
+/* Active */
+
+.nav-links a.active{
+
+    background:white;
+    color:#163A70;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:900px){
+
+.navbar{
+
+    flex-direction:column;
+
+    padding:20px;
+
+    gap:18px;
+
+}
+
+.logo h2{
+
+    font-size:26px;
+
+}
+
+.nav-links{
+
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+
+}
+
+.nav-links a{
+
+    font-size:16px;
+    padding:10px 18px;
+
+}
+
+}

@@ -1,0 +1,90 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   Global Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Outfit',sans-serif;
+}
+
+/* ===========================
+   Body
+=========================== */
+
+body{
+    background:linear-gradient(135deg,#fff7ed,#eff6ff);
+    color:#334155;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   Links
+=========================== */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+button{
+    font-family:'Outfit',sans-serif;
+    transition:0.3s ease;
+}
+
+/* ===========================
+   Form Elements
+=========================== */
+
+input,
+textarea,
+select{
+    font-family:'Outfit',sans-serif;
+}
+
+/* ===========================
+   Images
+=========================== */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#E2E8F0;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#F97316;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#EA580C;
+}
+
+/* ===========================
+   Text Selection
+=========================== */
+
+::selection{
+    background:#F97316;
+    color:white;
+}
