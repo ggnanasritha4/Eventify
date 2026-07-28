@@ -18,8 +18,6 @@ Eventify is a full-stack Event Registration System developed using Flutter, Reac
 
 \- View event registrations
 
-\- Cross-platform Flutter mobile application
-
 \- React web application
 
 
@@ -28,7 +26,7 @@ Eventify is a full-stack Event Registration System developed using Flutter, Reac
 
 
 
-\- Flutter (Mobile)
+
 
 \- React + Vite (Web)
 
@@ -52,7 +50,7 @@ EventRegistrationSystem/
 
 ├── web/
 
-└── flutter\_app/
+
 
 ```
 
@@ -93,20 +91,6 @@ npm run dev
 ```
 
 
-
-\### Flutter
-
-
-
-```bash
-
-cd flutter\_app
-
-flutter pub get
-
-flutter run
-
-```
 
 
 
