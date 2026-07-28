@@ -166,7 +166,7 @@ function AdminRegistrations() {
 
                       {
 
-                        reg.registeredAt
+                        reg.createdAt
 
                         ? new Date(reg.registeredAt)
                           .toLocaleDateString("en-GB")
